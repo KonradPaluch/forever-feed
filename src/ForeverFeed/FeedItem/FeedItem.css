@@ -1,0 +1,29 @@
+.m-item__thumbnail{
+    margin-left: 5px;
+    height: 100px;
+    width: 150px;
+    float: left;
+    display: inline;
+    transition: opacity 2s;
+}
+
+.o-feed__item{
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    min-height: 110px;
+    border-right: solid darkgrey 2px;
+    border-bottom: solid darkgrey 2px;
+}
+
+@media only screen and (max-width: 550px){
+    .m-item__thumbnail{
+        width: 100%;
+        height: auto;
+        opacity: 0.2;
+
+    }
+    .o-feed__item{
+        min-height: 200px;
+    }
+}
