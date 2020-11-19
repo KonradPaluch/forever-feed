@@ -2,7 +2,7 @@
 Demo of infinite scroll prepared by Konrad Paluch for the recruitment process at OKO.press.
 
 ## Setup instruction
-Clone the repo,
+Clone the repository to your directory of choice. 
 
 In the terminal, go to the project directory and run 'npm i' to install dependencies.
 
