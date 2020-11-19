@@ -1,10 +1,8 @@
 import React from 'react';
 import './Header.css';
 
-const Header = () => {
+export const Header = () => {
     return(
-      <div className='Header'>Infinite Scroll by Konrad Paluch</div>
+      <div className="Header">Infinite Scroll by Konrad Paluch</div>
     );
 }
-
-export {Header};

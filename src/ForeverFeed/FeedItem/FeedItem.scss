@@ -1,0 +1,48 @@
+.m-item__thumbnail{
+    margin-left: 5px;
+    height: 100px;
+    width: 150px;
+    float: left;
+    display: inline;
+    transition: opacity 2s;
+}
+
+@for $i from 1 through 10{
+    .o-feed__item#{$i}{
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        padding-right: 10px;
+        min-height: 110px;
+        border-right: solid darkgrey 2px;
+        border-bottom: solid darkgrey 2px;
+        animation-duration: 0.5s;
+        animation-fill-mode: both;
+        animation-iteration-count: 1;
+        animation-name: showup;
+        animation-delay: $i * 0.2s;
+    }
+}
+
+@keyframes showup {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .m-item__thumbnail{
+        width: 100%;
+        height: auto;
+        opacity: 0.2;
+
+    }
+    .o-feed__item{
+        min-height: 200px;
+    }
+}
